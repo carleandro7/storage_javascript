@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" name="formcontato" method="get">
+        <label for="">Nome da Disciplina</label>
+        <input type="text" name="nome_disciplina" id="nome_disciplina">
+        <label for="">Curso</label>
+        <select name="curso_nome" id="curso_nome">
+        </select>
+        <input type="button" value="Salvar" onclick="salvar_objeto()">
+    </form>
+
+    <table>
+        <tr>
+            <th>Nome da Disciplina</th>
+            <th>Curso</th>
+            <th>Ações</th>
+        </tr>
+        <tbody id="lista"></tbody>
+    </table>
+    
+    <script src="carregarinformacoes.js" ></script>
+    <script>
+        let tabela = "disciplina";
+        let valores_list = ["nome_disciplina", "curso_nome"];
+        let visibilidade_list = [1,1];
+        // nome do atributo, tabela, nome do atriuto da tabela
+        let carregar_select = ["curso_nome", "curso", "nome"]
+        listar_select(carregar_select);
+    </script>
+    <script src="gerenciadorbanco.js" ></script>
+</body>
+</html>

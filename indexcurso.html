@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" name="formcontato" method="get">
+        <label for="">Nome do Curso</label>
+        <input type="text" name="nome" id="nome">
+        <label for="">Descrição</label>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        <input type="button" value="Salvar" onclick="salvar_objeto()">
+    </form>
+
+    <table>
+        <tr>
+            <th>Nome do Curso</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+        <tbody id="lista"></tbody>
+    </table>
+    
+
+    <script>
+        let tabela = "curso";
+        let valores_list = ["nome", "descricao"];
+        let visibilidade_list = [1,1];
+    </script>
+    <script src="gerenciadorbanco.js" ></script>
+</body>
+</html>
