@@ -76,9 +76,9 @@ function listar_objetos() {
 
 function editar_objeto(indice) {
     var lista_banco = JSON.parse(localStorage.getItem(tabela));
-    var tabela = lista_banco[indice];
+    var objeto = lista_banco[indice];
     for (var elemento of valores_list) {
-        document.getElementById(elemento).value = tabela[elemento];
+        document.getElementById(elemento).value = objeto[elemento];
     }
     lista_banco.splice(indice, 1);
     listar_objetos();
